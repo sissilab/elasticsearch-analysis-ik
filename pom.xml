@@ -8,11 +8,12 @@
     <artifactId>elasticsearch-analysis-ik</artifactId>
     <version>${elasticsearch.version}</version>
     <packaging>jar</packaging>
-    <description>IK Analyzer for Elasticsearch</description>
+    <description>IK Analyzer for Elasticsearch (支持数据库热更新版)</description>
     <inceptionYear>2011</inceptionYear>
 
     <properties>
-        <elasticsearch.version>8.4.1</elasticsearch.version>
+        <!-- 改成对应ES版本 -->
+        <elasticsearch.version>8.5.1</elasticsearch.version>
         <maven.compiler.target>1.8</maven.compiler.target>
         <elasticsearch.assembly.descriptor>${project.basedir}/src/main/assemblies/plugin.xml</elasticsearch.assembly.descriptor>
         <elasticsearch.plugin.name>analysis-ik</elasticsearch.plugin.name>
